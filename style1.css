@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Sections */
+.intro {
+    background-color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Gallery */
+.image-gallery {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+}
+
+.image-gallery h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.image-gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.image-gallery .images img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.details h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+/* Visitor Information */
+.visitor-info {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+}
+
+.visitor-info h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.visitor-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.visitor-info li {
+    margin-bottom: 1rem;
+}
+
+.visitor-info li strong {
+    font-weight: bold;
+}
+
+/* Directions */
+.directions {
+    padding: 3rem 0;
+    background-color: #fff;
+}
+
+.directions h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.directions p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-list {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+.site-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.site-card:hover {
+    transform: scale(1.05);
+}
+
